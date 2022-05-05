@@ -1,0 +1,136 @@
+.header {
+    padding: 22px 0 21px 0;
+    &__container {
+        max-width: 1146px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__right {
+        max-width: 940px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 58px;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item + &__item {
+        margin-left: 32px;
+    }
+
+    &__nav-link {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+    }
+
+    &__nav-link:hover {
+        color: var(--main-color);
+    }
+
+    &__hamburger {
+        display: none;
+        border: none;
+        order: -2;
+        padding: 0;
+        margin: 0;
+        background-image: url("../images/hamburger.svg");
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 16px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header{
+        &__logo {
+            flex-shrink: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .header{
+        padding: 22px 0 22px 0;
+        position: relative;
+
+        &__right {
+            display: none;
+        }
+
+        &__logo {
+            flex-shrink: 0;
+            width: 75px;
+            height: 20px;
+            margin: 0 auto;
+        }
+
+        &__hamburger{
+            display: inline-block;
+        }
+    }
+
+    .header--open .header__right {
+        max-width: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 64px 32px 24px 32px;
+        position: absolute;
+        z-index: 2;
+        top: 100%;
+        left: 0;
+        width: 256px;
+        background: var(--background);
+        margin-left: 0;
+    }
+
+    .header--open .header__nav {
+        margin-bottom: 315px;
+    }
+
+    .header--open .header__list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header--open .header__item {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 24px;
+    }
+
+    .header--open .header__nav-link {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        color: #E5ECF4;
+    }
+
+    .header--open .button {
+        margin: 0 auto;
+    }
+
+    .header--open .header__hamburger {
+        background-image: url("../images/x.svg");
+    }
+}

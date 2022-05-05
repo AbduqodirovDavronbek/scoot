@@ -1,0 +1,26 @@
+.hero {
+    &__container {
+        background-image: url(../images/hero_back.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 153px 775px 152px 0;
+    }
+
+    &__heading {
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -2.5px;
+        color: var(--secondary-color);
+    }
+
+    &__middle {
+    }
+
+    &__arrow-left {
+    }
+
+    &__desc {
+    }
+}
