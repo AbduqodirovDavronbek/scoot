@@ -67,7 +67,7 @@
     }
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 650px) {
     .header{
         padding: 22px 0 22px 0;
         position: relative;
@@ -99,12 +99,9 @@
         top: 100%;
         left: 0;
         width: 256px;
+        height: 100vh;
         background: var(--background);
         margin-left: 0;
-    }
-
-    .header--open .header__nav {
-        margin-bottom: 315px;
     }
 
     .header--open .header__list {
