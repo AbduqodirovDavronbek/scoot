@@ -60,12 +60,12 @@
 
     &__icon {
         transition: all 0.4s;
-        color: #FCB72B;
+        color: var(--main-color);
         text-decoration: none;
     }
 
     &__icon:hover {
-        color: white;
+        color: var(--secondary-color);
     }
 }
 
