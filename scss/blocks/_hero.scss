@@ -67,7 +67,7 @@
     }
 }
 
-@media only screen and (max-width: 1012px) {
+@media only screen and (max-width: 1150px) {
     .hero {
         margin: 0;
         &__container {
@@ -110,9 +110,9 @@
     }
 }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 592px) {
     .hero {
-        margin: 0;
+        margin-bottom: 120px;
         &__container {
             padding: 115px 0 179px 0;
             background-image: url(../../images/hero_mobile.png);
