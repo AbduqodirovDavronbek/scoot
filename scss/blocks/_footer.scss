@@ -71,6 +71,7 @@
 
 @media only screen and (max-width: 592px) {
     .footer {
+        position: static;
         padding: 64px 0 88px 0;
         &__container {
             flex-direction: column;
